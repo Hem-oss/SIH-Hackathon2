@@ -1,0 +1,28 @@
+count1 - vehicle density in lane 1
+count2 - vehicle density in lane 2
+max_count - no. of seconds for one cycle 
+
+if(RFID card present){
+  //ambulance rfid code is executed
+  //ambulance lane made green till it passes
+}
+else{
+  if(count1>=count2){
+    //lane 1 made green
+    //lane 2 made red
+    delay((count1/(count1+count2))*max_count);
+    //lane 1 made red 
+    //lane 2 made green
+    delay((count2/(count1+count2))*max_count);
+  }
+  else{
+    //lane 2 made green
+    //lane 1 made red
+    delay((count2/(count1+count2))*max_count);
+    //lane 2 made red 
+    //lane 1 made green
+    delay((count1/(count1+count2))*max_count);
+  }
+}
+   
+    
