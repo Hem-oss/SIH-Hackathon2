@@ -3,7 +3,7 @@ RFID TAG SETUP:
 - Connected the RFID scanner to Arduino board to respond to RFID tags.
 - Debugging in process
 SERVO MOTOR SETUP:
-- To be used with ultrasonic secsor to scan the surroundings.
+- To be used with ultrasonic sensor to scan the surroundings.
 - Connected with Arduino board.
 - Working on code at Arduino IDE.
 - Code debugging in process.
